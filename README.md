@@ -10,7 +10,7 @@ The Python library for the [Pocket Science Lab](https://pslab.io) from FOSSASIA.
 
 This repository hosts the Python library for communicating with the Pocket Science Lab open hardware platform (PSLab). Using this library you can communicate with the PSLab using simple Python code. The Python library is also used by the PSLab GUI as a backend component.
 
-The goal of PSLab is to create an Open Source hardware device (open on all layers) and software applications that can be used for experiments by teachers, students and scientists. Our tiny pocket lab provides an array of instruments for doing science and engineering experiments. It provides functions of numerous measurement tools including an oscilloscope, a waveform generator, a logic analyzer, a programmable voltage and current source, and even a component to control robots with up to four servos.
+The goal of PSLab is to create an Open Source hardware device (open on all layers) and software applications that can be used for experiments by teachers, students, and scientists. Our tiny pocket lab provides an array of instruments for doing science and engineering experiments. It provides functions of numerous measurement tools including an oscilloscope, a waveform generator, a logic analyzer, a programmable voltage and current source, and even a component to control robots with up to four servos.
 
 For more information see [https://pslab.io](https://pslab.io).
 
@@ -21,23 +21,23 @@ For more information see [https://pslab.io](https://pslab.io).
 
 ## Installation
 
-pslab-python can be installed from PyPI:
+PSLab-python can be installed from PyPI:
 
-	$ pip install pslab
+	$ pip install PSLab
 
 **Note**: Linux users must additionally install a udev rules file for pslab-python to be able to communicate with the PSLab device. The file [99-pslab.rules](https://github.com/fossasia/pslab-python/blob/development/99-pslab.rules) should be copied to /etc/udev/rules.d/.
 
-**Note**: If you are only interested in using PSLab as an acquisition device without a display/GUI, only pslab-python needs to be installed. If you would like a GUI, install the [pslab-desktop app](https://github.com/fossasia/pslab-desktop) and follow the instructions of the Readme in that repo.
+**Note**: If you are only interested in using PSLab as an acquisition device without a display/GUI, only PSLab-python needs to be installed. If you would like a GUI, install the [PSLab-desktop app](https://github.com/fossasia/pslab-desktop) and follow the instructions of the Readme in that repo.
 
 
 ## Validate installation
 
-1. Plug in the PSLab device and check that both the LEDs light up.
+1. Plugin the PSLab device and check that both the LEDs light up.
 2. The following piece of code should run without errors:
 ```
-from pslab import ScienceLab
-psl = ScienceLab()
-capacitance = psl.multimeter.measure_capacitance()
+from PSLab import ScienceLab
+PSL = ScienceLab()
+capacitance = PSL.multimeter.measure_capacitance()
 print(capacitance)
 ```
 
@@ -55,4 +55,4 @@ See [CONTRIBUTING.md](https://github.com/fossasia/pslab-python/blob/development/
 
 ## License
 
-This library is free and open source software licensed under the [GPL v3](https://github.com/fossasia/pslab-python/blob/development/README.md). The copyright is owned by FOSSASIA.
+This library is free and open source-software licensed under the [GPL v3](https://github.com/fossasia/pslab-python/blob/development/README.md). The copyright is owned by FOSSASIA.
